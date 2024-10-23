@@ -1,7 +1,3 @@
-Based on the additional files you provided, here is an updated and comprehensive README for "AccommoDate" following the "Roomie" style:
-
----
-
 # AccommoDate
 
 AccommoDate is a distributed accommodation booking system developed in Java with an Android frontend. It utilizes a distributed architecture to efficiently process and manage booking data. AccommoDate consists of two main components:
@@ -54,4 +50,4 @@ java ConsoleApp
 
 ---
 
-This README captures the backend and frontend aspects of the project, emphasizing distributed architecture and key functionalities for managers and customers. Let me know if any further adjustments are needed!
+

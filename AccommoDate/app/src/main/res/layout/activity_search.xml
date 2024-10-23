@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <!-- Include the header layout -->
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Search Form Layout -->
+    <LinearLayout
+        android:id="@+id/searchForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="252dp"
+        android:layout_marginBottom="175dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- Area Search -->
+        <EditText
+            android:id="@+id/et_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter area"
+            android:minHeight="48dp" />
+
+        <!-- Date Search -->
+        <EditText
+            android:id="@+id/et_stars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter star review"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/et_guests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter guests"
+            android:minHeight="48dp" />
+
+        <!-- Price Search -->
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Enter price"
+            android:minHeight="48dp" />
+
+        <!-- Date Selection Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Select Start Date:"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/datePickerButtonStart"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="openStartDatePicker"
+                android:text="Select Start Date   "
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Select End Date:   "
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/datePickerButtonEnd"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:onClick="openEndDatePicker"
+                android:text="Select End \nDate"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darker_b"
+            android:text="Search"
+            android:textSize="17sp"
+            android:theme="@style/ShapeAppearance.Material3.Corner.ExtraSmall" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

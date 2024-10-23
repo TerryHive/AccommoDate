@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_guests"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_guests"
+        app:layout_constraintEnd_toEndOf="@+id/tv_guests"
+        app:layout_constraintTop_toBottomOf="@+id/tv_guests" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_area"
+        app:layout_constraintEnd_toEndOf="@+id/tv_area"
+        app:layout_constraintTop_toBottomOf="@+id/tv_area" />
+
+    <TextView
+        android:id="@+id/tv_stars"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_price"
+        app:layout_constraintEnd_toEndOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price" />
+
+    <TextView
+        android:id="@+id/tv_reviews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_stars"
+        app:layout_constraintEnd_toEndOf="@+id/tv_stars"
+        app:layout_constraintTop_toBottomOf="@+id/tv_stars" />
+
+    <Button
+        android:id="@+id/btn_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See More"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reviews"
+        android:background="@color/darker_b"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
